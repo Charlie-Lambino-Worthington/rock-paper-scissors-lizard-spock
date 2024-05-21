@@ -1,3 +1,30 @@
+/*game page*/
+body section {
+  background-color: purple;
+  display: flex;
+  border-radius: 25px;
+  border: blue 8px solid;
+  height: 90vh;
+  width:98%;
+}
+
+.gamebuttons button {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%; 
+  font-size: 100px;
+  color: blue;
+justify-content: space-between;
+align-content: space-between;
+margin: 10px;
+}
+section img {
+  height: 95%;
+  margin: 5px;
+}
+
+
+/*character selection page*/
 .container, #info {
   width: 95%;
   height: 60%;
@@ -28,7 +55,7 @@ max-width:500px;
 position: relative;
 margin-top: 10px;
 }
-button{
+#controls button{
 position: relative;
 display: inline-block;
 padding: 15px;
@@ -43,7 +70,7 @@ text-shadow: 0px -1px #333;
 border-radius: 10px;
 margin-bottom: 5px;
 }
-button:after{
+#controls button:after{
 content: '';
 position: absolute;
 top: 2px;
@@ -53,7 +80,8 @@ height: 50%;
 background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
 border-radius: 10px;
 }
-button:hover{
+#contols button:hover{
 color: teal;
 font-size: 28px;
 }
+
