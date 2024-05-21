@@ -1,36 +1,14 @@
-/*game page*/
-body section {
-  background-color: purple;
-  border-radius: 25px;
-  border: blue 8px solid;
-  height: 85vh;
-  margin:10px;
+* {
+  margin: 0;
+  padding: 0;
+ 
 }
-
-.gamebuttons button {
-  border-radius: 50%; 
-  font-size: 80px;
-  color: blue;
-  margin: 10px;
-  padding: 10px;
-  margin-top: 5%;
-
-}
-section img {
-  height: 80vh;
-  margin: 5px;
-}
-
-section .score {
-  background-color: purple;
-  border-radius: 25px;
-  border: blue 8px solid;
-  height: 10vh;
-  width:95%;
-  margin:25px;
 
 /*character selection page*/
-.container, #info {
+#characterpage{
+  background-color: teal;
+}
+#characterpage #container {
   width: 95%;
   height: 60%;
   margin: 10px auto;
@@ -42,16 +20,19 @@ section .score {
   text-align: center;
 
 }
-  #info
-  {
-      height: 100px;
-      color: antiquewhite;
-  }
+#characterpage #info
+{
+    height: 100px;
+    color: antiquewhite;
+    border: 10px solid purple;
+    border-radius: 20px;
+  text-align: center;
+}
 
-  @keyframes scroll
+@keyframes scroll
 {
 to {
-  background-position: -150px -150px;
+background-position: -150px -150px;
 }
 }
 #img {
@@ -90,3 +71,37 @@ color: teal;
 font-size: 28px;
 }
 
+
+/*game page*/
+body section {
+  background-color: purple;
+  border-radius: 25px;
+  border: blue 8px solid;
+  height: 85vh;
+  margin:10px;
+}
+
+.gamebuttons button {
+  border-radius: 50%; 
+  font-size: 80px;
+  color: blue;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 5%;
+
+}
+section img {
+  height: 80vh;
+  margin: 5px;
+}
+
+section .score {
+  background-color: purple;
+  border-radius: 25px;
+  border: blue 8px solid;
+  height: 10vh;
+  width:95%;
+  margin:25px;
+
+
+ 
