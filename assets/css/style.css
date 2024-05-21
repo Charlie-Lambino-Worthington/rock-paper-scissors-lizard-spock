@@ -1,28 +1,33 @@
 /*game page*/
 body section {
   background-color: purple;
-  display: flex;
   border-radius: 25px;
   border: blue 8px solid;
-  height: 90vh;
-  width:98%;
+  height: 85vh;
+  margin:10px;
 }
 
 .gamebuttons button {
-  height: 200px;
-  width: 200px;
   border-radius: 50%; 
-  font-size: 100px;
+  font-size: 80px;
   color: blue;
-justify-content: space-between;
-align-content: space-between;
-margin: 10px;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 5%;
+
 }
 section img {
-  height: 95%;
+  height: 80vh;
   margin: 5px;
 }
 
+section .score {
+  background-color: purple;
+  border-radius: 25px;
+  border: blue 8px solid;
+  height: 10vh;
+  width:95%;
+  margin:25px;
 
 /*character selection page*/
 .container, #info {
