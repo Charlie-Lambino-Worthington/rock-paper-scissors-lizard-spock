@@ -1,0 +1,12 @@
+.characterpage #container #info {
+    width: 700px;
+  height: 600px;
+  margin: 10px auto;
+  background-color: red;
+  background: url("images/background.jpg");
+  background-size: 150px 150px;
+  animation: scroll 5s linear infinite;
+  border: 10px solid orange;
+  border-radius: 20px;
+  text-align: center;
+}
