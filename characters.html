@@ -6,86 +6,62 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Character Selector</title>
     <style>
-        #container, #info {
-          width: 700px;
-          height: 600px;
-          margin: 10px auto;
-          background-color: purple;
-          background: url("assets/images/77762.jpg");
-          background-size: 200px 200px;
-          animation: scroll 5s linear infinite;
-          border: 10px solid purple;
-          border-radius: 20px;
-          text-align: center;
-        
-        }
-        #info
-        {
-            height: 100px;
-            color: antiquewhite;
-        }
-
-        @keyframes scroll
-{
-    to {
-        background-position: -150px -150px;
+     .container, #info {   
+        background-image: url("assets/images/77762.jpg") !important;
+        background-size: 200px 200px;
+        animation: scroll 5s linear infinite;
     }
-}
-#img {
-    height :500px;
-    max-width:500px;
-    position: relative;
-    margin-top: 10px;
-}
-button{
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    color: #fff;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 3px;
-    box-shadow: 0px 1px 4px -2px #333;
-    text-shadow: 0px -1px #333;
-    border-radius: 10px;
-}
-button:after{
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 50%;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
-    border-radius: 10px;
-}
-button:hover{
-    color: black;
-    font-size: 28px;
-}
-
-
     </style>
 </head>
 <body class="characterpage">
-    <div id="container">
+    <div class="container">
         <div id="image">
            
             <img id="img"  src="assets/images/leonard-hofstadter-png-clipart-removebg-preview.png" alt="">
         </div>
         <div id="controls">
-            <button id="leonard" onclick="ChangeCharacter('jin')">Leonard</button>
-            <button id="penny" onclick="ChangeCharacter('paul')">Penny</button>
-            <button id="howard" onclick="ChangeCharacter('hwoarang')">Howard</button>
+            <button id="leonard" onclick="ChangeCharacter('leonard')">Leonard</button>
+            <button id="penny" onclick="ChangeCharacter('penny')">Penny</button>
+            <button id="howard" onclick="ChangeCharacter('howard')">Howard</button>
             <button id="burnadette" onclick="ChangeCharacter('bryan')">Burnadette</button>
             <button id="raj" onclick="ChangeCharacter('hwoarang')">Raj</button>
             <button id="amy" onclick="ChangeCharacter('bryan')">Amy</button>
         </div>
     </div>
     <div id="info">
-        <h2>Leonard</h2>
+        <h2 id="name">Leonard</h2>
         <p>Select another character by using the buttons above</p>
     </div>
+
+    <script>
+        function ChangeCharacter(character) {
+        switch(character)
+        {
+            case "leonard":
+                document.getElementById("img").src = "assets/images/leonard-hofstadter-png-clipart-removebg-preview.png";
+                document.getElementById("name").innerHTML = "Leonard";
+                break;
+            case "penny":
+                document.getElementById("img").src = "assets/images/penny-the-big-bang-theory-removebg-preview.png";
+                document.getElementById("name").innerHTML = "Penny";
+                break;
+            case "howard":
+                document.getElementById("img").src = "assets/images/howard-removebg-preview.png";
+                document.getElementById("name").innerHTML = "Howard";
+                break;
+            case "burnadette":
+                document.getElementById("img").src = "assets/images/bernadette_rostenkowski.webp";
+                document.getElementById("name").innerHTML = "Burnadette";
+                break;
+                case "raj":
+                document.getElementById("img").src = "assets/images/raj-the-big-bang-theory-removebg-preview.png";
+                document.getElementById("name").innerHTML = "Raj";
+                break;
+            case "amy":
+                document.getElementById("img").src = "assets/images/89351de7cfeafd3407d78927c95cff8b-removebg-preview.png";
+                document.getElementById("name").innerHTML = "Amy";
+                break;
+        }
+    </script>
 </body>
 </html>
