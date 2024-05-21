@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Character Selector</title>
+    <style>
+     .container, #info {   
+        background-image: url("assets/images/77762.jpg") !important;
+        background-size: 200px 200px;
+        animation: scroll 5s linear infinite;
+    }
+    </style>
+</head>
+<body class="characterpage">
+    <div class="container">
+        <div id="image">
+           
+            <img id="img"  src="assets/images/leonard-hofstadter-png-clipart-removebg-preview.png" alt="">
+        </div>
+        <div id="controls">
+            <button id="leonard" onclick="ChangeCharacter('leonard')">Leonard</button>
+            <button id="penny" onclick="ChangeCharacter('penny')">Penny</button>
+            <button id="howard" onclick="ChangeCharacter('howard')">Howard</button>
+            <button id="burnadette" onclick="ChangeCharacter('burnadette')">Bernadette</button>
+            <button id="raj" onclick="ChangeCharacter('raj')">Raj</button>
+            <button id="amy" onclick="ChangeCharacter('amy')">Amy</button>
+        </div>
+    </div>
+    <div id="info">
+        <h2 id="name">Leonard</h2>
+        <p>Select another character by using the buttons above</p>
+    </div>
+
+   
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
