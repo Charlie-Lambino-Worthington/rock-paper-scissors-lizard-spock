@@ -41,46 +41,54 @@ function ChangeCharacter(character) {
     let playerScore = 0;
 
     function playGame(playerChoice) {
-        const computerChoiceIndex = Math.floor(Math.random() * choices.length);
-        const computerChoice = choices[computerChoiceIndex];
-        let result = "";
-    
-        // Define the outcomes for each choice
-        const outcomes = {
-            rock: { scissors: "win", lizard: "win" },
-            paper: { rock: "win", spock: "win" },
-            scissors: { paper: "win", lizard: "win" },
-            lizard: { spock: "win", paper: "win" },
-            spock: { scissors: "win", rock: "win" }
-        };
-    
-        // Check if it's a tie
-        if (playerChoice === computerChoice) {
-            result = "IT'S A TIE!";
-        } else {
-            // Determine the winner based on the outcomes
-            if (outcomes[playerChoice][computerChoice] === "win") {
-                result = "YOU WIN!";
-                playerScore++;
-                playerScoreDisplay.textContent = playerScore;
+        while (playerScore < 10 && sheldonScore < 10) {
+            const computerChoiceIndex = Math.floor(Math.random() * choices.length);
+            const computerChoice = choices[computerChoiceIndex];
+            let result = "";
+        
+            // Define the outcomes for each choice
+            const outcomes = {
+                rock: { scissors: "win", lizard: "win", paper: "lose", spock: "lose" },
+                paper: { rock: "win", spock: "win", scissors: "lose", lizard: "lose"},
+                scissors: { paper: "win", lizard: "win", rock: "lose", spock: "lose" },
+                lizard: { spock: "win", paper: "win", scissors: "lose", rock: "lose" },
+                spock: { scissors: "win", rock: "win", lizard: "lose", paper:"lose" }
+            };
+        
+            // Check if it's a tie
+            if (playerChoice === computerChoice) {
+                result = "IT'S A TIE!";
             } else {
-                result = "SHELDON WINS!";
-               sheldonScoreScore++;
-                sheldonScoreDisplay.textContent = sheldonScoreScore;
+                // Determine the winner based on the outcomes
+                if (outcomes[playerChoice][computerChoice] === "win") {
+                    result = "YOU WIN!";
+                    playerScore++;
+                    playerScoreDisplay.textContent = playerScore;
+                } else  if (outcomes[playerChoice][computerChoice] === "lose")  {
+                    result = "SHELDON WINS!";
+                    sheldonScore++;
+                    sheldonScoreDisplay.textContent = sheldonScoreScore;
+                }
+            if (playerScore === 10) {
+                window.location.href = "win.html";
+            } else if (sheldonScore ===10){
+                window.location.href = "lose.html";
             }
         }
-    
-        // Optionally, log the result or update the UI
-        console.log(result);
+        
     
         // Return the result for further use, e.g., displaying it on the page
         
         document.getElementById("resultdisplay").innerHTML = `Sheldon played ${computerChoice}. You played ${playerChoice}. ${result}`
         return result;
+        }
     }
 
     function setCharacter(character) {
         var imgElement = document.getElementById('character'); 
+           // Update the header and character score display
+    document.getElementById('yourmove').textContent = `Your Move ${character} !`;
+    document.getElementById('characterscore').textContent = `${character}'s score: 0`;
         switch(character) {
             case "leonard":
                 imgElement.src = "assets/images/leonard-hofstadter-png-clipart-removebg-preview.png";
@@ -107,4 +115,8 @@ function ChangeCharacter(character) {
                         document.getElementById("name").textContent = "Amy"; 
                 break;
         }
-        }
+
+    
+    // Load the game page
+    window.location.href = 'game.html';
+    }

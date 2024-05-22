@@ -12,13 +12,12 @@
  body section h1 {
    font-size: 5vw !important;
  }
- section img {
-  height: 50vh !important;
- }
+
  body section {
   border-radius: 25px;
-  height: 60vh !important;
+  height: 70vh !important;
   margin:10px;
+  margin-bottom: 5px;
 }
 section .score {
  margin-top: 35px !important;
@@ -27,7 +26,7 @@ section .score {
 }
    }
 /*colours*/
-   #characterpage, #gamepage {
+   #characterpage, #gamepage, .resultspage {
     background-color: teal;
     text-align: center;
   }
@@ -43,6 +42,7 @@ section .score {
   border: 10px solid purple;
   border-radius: 20px;
   text-align: center;
+  overflow: hidden;
 }
 #characterpage #info
 {
@@ -107,6 +107,7 @@ body section {
   text-align: center;
   background-color: purple;
   color: antiquewhite;
+  overflow: hidden;
 }
 
 .gamebuttons button {
@@ -127,7 +128,7 @@ body section {
   margin-bottom: 5px;
 }
 section img {
-  height: 65vh;
+  height: 60vh;
   margin: 4px;
 }
 
@@ -160,4 +161,31 @@ margin-top: 5px;
   
 .modal-content {
   background-color: purple;
+}
+
+/*result page*/
+ .win {
+  
+    
+    color: antiquewhite;
+    border: 10px solid purple;
+    border-radius: 20px;
+}
+.resultspage img {
+ height: 50vh;
+}
+.resultspage button {
+  position: relative;
+display: inline-block;
+padding: 10px;
+color: white;
+background-color: purple;
+font-size: 15px;
+font-family: sans-serif;
+font-weight: bold;
+border-radius: 3px;
+box-shadow: 0px 1px 4px -2px #333;
+text-shadow: 0px -1px #333;
+border-radius: 10px;
+margin-bottom: 5px;
 }
