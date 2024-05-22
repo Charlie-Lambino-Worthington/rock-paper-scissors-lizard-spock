@@ -79,7 +79,11 @@ function ChangeCharacter(character) {
     
         // Return the result for further use, e.g., displaying it on the page
         
-        document.getElementById("resultdisplay").innerHTML = `Sheldon played ${computerChoice}. You played ${playerChoice}. ${result}`
+        document.getElementById("resultdisplay").innerHTML = `Sheldon played ${computerChoice}.
+         <br>
+         You played ${playerChoice}. 
+         <br>
+         ${result}`
         return result;
         }
     }
@@ -88,8 +92,9 @@ function ChangeCharacter(character) {
         var imgElement = document.getElementById('character'); 
            // Update the header and character score display
     document.getElementById('yourmove').textContent = `Your Move ${character} !`;
-    document.getElementById('characternamehere').textContent = `${character}'s score: ${playerScore}`;
-
+    document.getElementById('characternamehere').textContent = `${character}'s score: `;
+    document.getElementById('characterscore').textContent = `${playerScore}`;
+    document.getElementById('sheldonscore').textContent = ` ${sheldonScore}`;
         switch(character) {
             case "leonard":
                 imgElement.src = "assets/images/leonard-hofstadter-png-clipart-removebg-preview.png";
