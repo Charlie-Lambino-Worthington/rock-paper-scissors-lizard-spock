@@ -88,7 +88,8 @@ function ChangeCharacter(character) {
         var imgElement = document.getElementById('character'); 
            // Update the header and character score display
     document.getElementById('yourmove').textContent = `Your Move ${character} !`;
-    document.getElementById('characterscore').textContent = `${character}'s score: 0`;
+    document.getElementById('characternamehere').textContent = `${character}'s score: ${playerScore}`;
+
         switch(character) {
             case "leonard":
                 imgElement.src = "assets/images/leonard-hofstadter-png-clipart-removebg-preview.png";
