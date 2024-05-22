@@ -28,6 +28,9 @@ function ChangeCharacter(character) {
             break;
         }
     }
+
+
+    
     // function for rpsls
     const choices = ["rock", "paper", "scissors", "lizard", "spock"]; 
     const playerScoreDisplay = document.getElementById("characterscore");
@@ -37,7 +40,34 @@ function ChangeCharacter(character) {
     function playGame(playerChoice) {
         const computerChoiceIndex = Math.floor(Math.random() * choices.length);
         const computerChoice = choices[computerChoiceIndex];
-
-        console.log (computerChoice);
+        let result = "";
+    
+        // Define the outcomes for each choice
+        const outcomes = {
+            rock: { scissors: "win", lizard: "win" },
+            paper: { rock: "win", spock: "win" },
+            scissors: { paper: "win", lizard: "win" },
+            lizard: { spock: "win", paper: "win" },
+            spock: { scissors: "win", rock: "win" }
+        };
+    
+        // Check if it's a tie
+        if (playerChoice === computerChoice) {
+            result = "IT'S A TIE!";
+        } else {
+            // Determine the winner based on the outcomes
+            if (outcomes[playerChoice][computerChoice] === "win") {
+                result = "YOU WIN!";
+            } else {
+                result = "SHELDON WINS!";
+            }
+        }
+    
+        // Optionally, log the result or update the UI
+        console.log(result);
+    
+        // Return the result for further use, e.g., displaying it on the page
+        
+        document.getElementById("resultdisplay").innerHTML = `Sheldon played ${computerChoice} ${result}`
+        return result;
     }
-  

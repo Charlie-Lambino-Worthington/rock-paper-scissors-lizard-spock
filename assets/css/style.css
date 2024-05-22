@@ -29,29 +29,27 @@ section .score {
 /*colours*/
    #characterpage, #gamepage {
     background-color: teal;
+    text-align: center;
   }
 /*character selection page*/
 
 #characterpage #container {
   width: 90vw;
   height: 75vh;
-  margin: 10px auto;
+  margin: 5px auto;
   background-image: url("assets/images/77762.jpg") !important;
   background-size: 200px 200px;
   animation: scroll 5s linear infinite;
   border: 10px solid purple;
   border-radius: 20px;
   text-align: center;
-
 }
 #characterpage #info
 {
-    height: 10vh;
-    
+    height: 15vh;
     color: antiquewhite;
     border: 10px solid purple;
     border-radius: 20px;
-    text-align: center;
 }
 
 @keyframes scroll
@@ -146,10 +144,10 @@ section .score {
 .score button {
   position: relative;
 display: inline-block;
-padding: 10px;
+padding: 5px;
 color: blue;
 background-color: purple;
-font-size: 15px;
+font-size: 10px;
 font-family: sans-serif;
 font-weight: bold;
 border-radius: 3px;
@@ -160,4 +158,6 @@ margin-bottom: 5px;
 margin-top: 5px;
 }
   
- 
+.modal-content {
+  background-color: purple;
+}
