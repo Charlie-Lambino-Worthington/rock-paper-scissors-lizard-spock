@@ -33,7 +33,7 @@ section .score {
 /*character selection page*/
 
 #characterpage #container {
-  width: 97vw;
+ 
   height: 75vh;
   margin: 5px;
   background-image: url("assets/images/77762.jpg") !important;
@@ -50,6 +50,7 @@ section .score {
     color: antiquewhite;
     border: 10px solid purple;
     border-radius: 20px;
+    font-size: large;
 }
 
 @keyframes scroll
