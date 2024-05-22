@@ -33,9 +33,9 @@ section .score {
 /*character selection page*/
 
 #characterpage #container {
-  width: 90vw;
+  width: 97vw;
   height: 75vh;
-  margin: 5px auto;
+  margin: 5px;
   background-image: url("assets/images/77762.jpg") !important;
   background-size: 200px 200px;
   animation: scroll 5s linear infinite;
@@ -139,8 +139,8 @@ section h1 {
   background-color: purple;
   border-radius: 25px;
   border: purple 8px solid;
-  width:95%;
-  margin:5%; 
+  width:99%;
+  font-size: x-large;
   color: antiquewhite;
 }
 .score button {
@@ -149,7 +149,7 @@ display: inline-block;
 padding: 5px;
 color: blue;
 background-color: purple;
-font-size: 10px;
+font-size: 15px;
 font-family: sans-serif;
 font-weight: bold;
 border-radius: 3px;
@@ -165,12 +165,13 @@ margin-top: 5px;
 }
 
 /*result page*/
- .win {
-  
-    
+ .win { 
     color: antiquewhite;
     border: 10px solid purple;
     border-radius: 20px;
+}
+.resultspage .container-fluid {
+  height: 60vh;
 }
 .resultspage img {
  height: 50vh;
@@ -189,4 +190,7 @@ box-shadow: 0px 1px 4px -2px #333;
 text-shadow: 0px -1px #333;
 border-radius: 10px;
 margin-bottom: 5px;
+}
+.resultspage p {
+  font-size: x-large;
 }
