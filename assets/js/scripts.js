@@ -45,7 +45,7 @@ function ChangeCharacter(character) {
             const computerChoiceIndex = Math.floor(Math.random() * choices.length);
             const computerChoice = choices[computerChoiceIndex];
             let result = "";
-        
+           
             // Define the outcomes for each choice
             const outcomes = {
                 rock: { scissors: "win", lizard: "win", paper: "lose", spock: "lose" },
@@ -67,15 +67,15 @@ function ChangeCharacter(character) {
                 } else  if (outcomes[playerChoice][computerChoice] === "lose")  {
                     result = "SHELDON WINS!";
                     sheldonScore++;
-                    sheldonScoreDisplay.textContent = sheldonScoreScore;
+                    sheldonScoreDisplay.textContent = sheldonScore;
                 }
-            if (playerScore === 10) {
-                window.location.href = "win.html";
-            } else if (sheldonScore ===10){
-                window.location.href = "lose.html";
-            }
+           
         }
-        
+        if (playerScore === 10) {
+            window.location.href = "win.html";
+        } else if (sheldonScore ===10){
+            window.location.href = "lose.html";
+        }  
     
         // Return the result for further use, e.g., displaying it on the page
         
