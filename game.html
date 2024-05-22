@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock paper scissors lizard Spock</title>
     <style>
-      .container-fluid, .score  {   
+    .container-fluid {   
         background-image: url("assets/images/77762.jpg") !important;
         background-size: 200px 200px;
         animation: scroll 5s linear infinite;
@@ -36,16 +36,16 @@
             <img src="assets/images/sheldon_cooper.webp" alt="Sheldon Cooper">
         </div>
     </div> 
-    
-
+  </section>
+<div class="container-fluid scorecontainer">
     <div class="score">
         <div class="row">
-            <div id="characterscore" class="col-6">
-                character score: 0
+            <div class="col-6">
+               <span id="characternamehere"></span><span id="characterscore" ></span> 
 
             </div>
              <div id="sheldonscore" class="col-6">
-                Sheldon's score: 0
+               <span>Sheldon's score: </span> <span id="sheldonscore">0</span>
             </div>
         <div class="row">
            <div class="col-6">
@@ -108,7 +108,7 @@
             </div>
         </div>
      </div>
-    </section>
+    </div>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

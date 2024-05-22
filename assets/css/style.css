@@ -99,13 +99,13 @@ font-size: 28px;
 body section {
   height: 75vh;
   margin: 10px auto;
-  background-image: url("assets/images/77762.jpg") !important;
+  background-image: url("assets/images/77762.jpg") ;
   background-size: 200px 200px;
   animation: scroll 5s linear infinite;
   border: 10px solid purple;
   border-radius: 20px;
   text-align: center;
-  background-color: purple;
+  background-color: ;
   color: antiquewhite;
   overflow: hidden;
 }
@@ -135,12 +135,13 @@ section img {
 section h1 {
   font-size: 5vh;
 }
-section .score {
+.scorecontainer {
   background-color: purple;
   border-radius: 25px;
   border: purple 8px solid;
   width:95%;
   margin:5%; 
+  color: antiquewhite;
 }
 .score button {
   position: relative;
