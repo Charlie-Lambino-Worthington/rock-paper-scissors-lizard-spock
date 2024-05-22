@@ -20,16 +20,16 @@
   <section id="game" class="container-fluid">
     <div class="row"> 
          <div class="characterimage col-3">
-            <img src="assets/images/leonard-hofstadter-png-clipart-removebg-preview.png" alt="">
+            <img src="assets/images/leonard-hofstadter-png-clipart-removebg-preview.png" id="character" alt="">
         </div>
         <div class="gamebuttons col-5">
-            <h1>Your Move Leonard</h1>
+            <h1 id="yourmove">Your Move Leonard</h1>
             <button onclick="playGame('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
             <button onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
             <button onclick="playGame('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
             <button onclick="playGame('lizard')"><i class="fa-solid fa-hand-lizard"></i></button>
             <button onclick="playGame('spock')"><i class="fa-solid fa-hand-spock"></i></button>
-            <div id="resultdisplay">result</div>
+            <div id="resultdisplay"></div>
 
         </div>
         <div class="col-3">
@@ -113,6 +113,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get the character parameter from the URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var characterParam = urlParams.get('character');
+
+    // Call the setCharacter function with the character parameter
+    setCharacter(characterParam);
+
+    // Initialize the game with the selected character
+    initializeGame();
+});
+    </script>
     </footer>
     <script src="assets/js/scripts.js"></script>
 </body>

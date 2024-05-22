@@ -21,17 +21,17 @@
             <img id="img"  src="assets/images/leonard-hofstadter-png-clipart-removebg-preview.png" alt="">
         </div>
         <div id="controls">
-           <a href="game.html"> <button id="leonard" onclick="ChangeCharacter('leonard')">Leonard</button></a>
-            <button id="penny" onclick="ChangeCharacter('penny')">Penny</button>
-            <button id="howard" onclick="ChangeCharacter('howard')">Howard</button>
-            <button id="burnadette" onclick="ChangeCharacter('burnadette')">Bernadette</button>
-            <button id="raj" onclick="ChangeCharacter('raj')">Raj</button>
-            <button id="amy" onclick="ChangeCharacter('amy')">Amy</button>
+            <a href="game.html?character=leonard"> <button id="leonard" onclick="ChangeCharacter('leonard')" ondblclick="selectCharacter('leonard')">Leonard</button></a>
+            <a href="game.html?character=penny">   <button id="penny" onclick="ChangeCharacter('penny')" ondblclick="selectCharacter('penny')">Penny</button></a>
+            <a href="game.html?character=howard">  <button id="howard" onclick="ChangeCharacter('howard')" ondblclick="selectCharacter('howard')">Howard</button></a>
+            <a href="game.html?character=burnadette">  <button id="burnadette" onclick="ChangeCharacter('burnadette')" ondblclick="selectCharacter('burnadette')">Bernadette</button></a>
+            <a href="game.html?character=raj"> <button id="raj" onclick="ChangeCharacter('raj')" ondblclick="selectCharacter('raj')">Raj</button></a>
+            <a href="game.html?character=amy">     <button id="amy" onclick="ChangeCharacter('amy')" ondblclick="selectCharacter('lamy')">Amy</button></a>
         </div>
     </div>
     <div id="info">
         <h2 id="name">Leonard</h2>
-        <p>Select another character by using the buttons above</p>
+        <p>To choose another character single click the buttons above, to play double click your character choice.</p>
     </div>
   
     <script src="assets/js/scripts.js"></script>
