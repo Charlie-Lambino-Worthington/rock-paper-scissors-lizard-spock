@@ -14,7 +14,7 @@ function ChangeCharacter(character) {
             document.getElementById("img").src = "assets/images/howard-removebg-preview.png";
             document.getElementById("name").innerHTML = "Howard";
             break;
-        case "burnadette":
+        case "bernadette":
             document.getElementById("img").src = "assets/images/bernadette_rostenkowski.webp";
             document.getElementById("name").innerHTML = "Bernadette";
             break;
@@ -108,7 +108,7 @@ function ChangeCharacter(character) {
                         imgElement.src = "assets/images/howard-removebg-preview.png";
                         document.getElementById("name").textContent = "Howard"; 
                 break;
-                case "burnadette":
+                case "bernadette":
                 imgElement.src = "assets/images/bernadette_rostenkowski.webp";
                 document.getElementById("name").textContent = "Bernadette"; 
                 break;
