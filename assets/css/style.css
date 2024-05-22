@@ -35,7 +35,7 @@ section .score {
 #characterpage #container {
  
   height: 75vh;
-  margin: 5px;
+  margin-bottom: 5px;
   background-image: url("assets/images/77762.jpg") !important;
   background-size: 200px 200px;
   animation: scroll 5s linear infinite;
