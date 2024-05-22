@@ -4,13 +4,37 @@
  
 }
 
+@media only screen and (max-width: 800px) {
+  body section .gamebuttons button { 
+     font-size: 12px !important;
+     padding: 8px !important;
+   }
+ body section h1 {
+   font-size: 5vw !important;
+ }
+ section img {
+  height: 50vh !important;
+ }
+ body section {
+  border-radius: 25px;
+  height: 60vh !important;
+  margin:10px;
+}
+section .score {
+ margin-top: 35px !important;
+  width:95%;
+  margin:5%; 
+}
+   }
+
+
 /*character selection page*/
 #characterpage{
   background-color: teal;
 }
 #characterpage #container {
-  width: 95%;
-  height: 60%;
+  width: 90vw;
+  height: 75vh;
   margin: 10px auto;
   background-image: url("assets/images/77762.jpg") !important;
   background-size: 200px 200px;
@@ -22,11 +46,12 @@
 }
 #characterpage #info
 {
-    height: 100px;
+    height: 10vh;
+    
     color: antiquewhite;
     border: 10px solid purple;
     border-radius: 20px;
-  text-align: center;
+    text-align: center;
 }
 
 @keyframes scroll
@@ -36,7 +61,7 @@ background-position: -150px -150px;
 }
 }
 #img {
-height :500px;
+height :55vh;
 max-width:500px;
 position: relative;
 margin-top: 10px;
@@ -44,10 +69,10 @@ margin-top: 10px;
 #controls button{
 position: relative;
 display: inline-block;
-padding: 15px;
+padding: 10px;
 color: white;
 background-color: purple;
-font-size: 20px;
+font-size: 15px;
 font-family: sans-serif;
 font-weight: bold;
 border-radius: 3px;
@@ -77,31 +102,41 @@ body section {
   background-color: purple;
   border-radius: 25px;
   border: blue 8px solid;
-  height: 85vh;
+  height: 75vh;
   margin:10px;
 }
 
 .gamebuttons button {
   border-radius: 50%; 
-  font-size: 80px;
+  font-size: 5vh;
   color: blue;
   margin: 10px;
-  padding: 10px;
   margin-top: 5%;
-
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  color: blue;
+  background-color: purple;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 1px 4px -2px #333;
+  text-shadow: 0px -1px #333;
+  margin-bottom: 5px;
 }
 section img {
-  height: 80vh;
-  margin: 5px;
+  height: 65vh;
+  margin: 4px;
 }
 
+section h1 {
+  font-size: 5vh;
+}
 section .score {
   background-color: purple;
   border-radius: 25px;
   border: blue 8px solid;
-  height: 10vh;
   width:95%;
-  margin:25px;
-
-
+  margin:5%; 
+}
+  
  

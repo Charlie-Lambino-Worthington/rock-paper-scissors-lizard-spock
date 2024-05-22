@@ -1,3 +1,4 @@
+// function for character selection page
 function ChangeCharacter(character) {
     switch(character)
     {
@@ -26,4 +27,13 @@ function ChangeCharacter(character) {
             document.getElementById("name").innerHTML = "Amy";
             break;
         }
+    }
+    // function for rpsls
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"]; 
+    const playerScoreDisplay = document.getElementById("characterscore");
+    const sheldonScoreDisplay = document.getElementById("sheldonscore");
+    const displayResult = document.getElementById("resultDisplay")
+
+    function playGame(playerChoice) {
+        const computerChoice = choices[Math.floor(Math.random() * 6)];
     }
