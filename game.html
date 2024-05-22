@@ -8,8 +8,15 @@
     <script src="https://kit.fontawesome.com/29ef0a5efd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock paper scissors lizard Spock</title>
+    <style>
+      .container-fluid, .score  {   
+        background-image: url("assets/images/77762.jpg") !important;
+        background-size: 200px 200px;
+        animation: scroll 5s linear infinite;
+    }
+    </style>
 </head>
-<body>
+<body id="gamepage">
   <section id="game" class="container-fluid">
     <div class="row"> 
          <div class="characterimage col-3">
@@ -42,7 +49,7 @@
             </div>
         <div class="row">
            <div class="col-6">
-                <button> return to character Selector</button>
+                <a href="index.html"><button> return to character Selector</button></a>
            </div>
            <div class="col-6">
                     <!-- Button trigger modal -->
@@ -107,5 +114,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

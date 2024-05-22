@@ -35,5 +35,9 @@ function ChangeCharacter(character) {
     const displayResult = document.getElementById("resultDisplay")
 
     function playGame(playerChoice) {
-        const computerChoice = choices[Math.floor(Math.random() * 6)];
+        const computerChoiceIndex = Math.floor(Math.random() * choices.length);
+        const computerChoice = choices[computerChoiceIndex];
+
+        console.log (computerChoice);
     }
+  
